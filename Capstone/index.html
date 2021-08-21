@@ -1,0 +1,126 @@
+<!--Coded by Dharani Pandya-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Form for Bicycle</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+  <style>
+    *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            background-color: white;
+        }
+
+        body {
+
+            background-color: white;
+            width: 850px;
+            margin: 0 auto;
+            border: 1px solid black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+       
+        h1 {
+            text-align: center;
+        } 
+    
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+       .option-fonts{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .banner{
+            width: 100%;
+            display: block;
+        }
+        .banner > .banner-image{
+            width: 100%;
+            display: block;
+        }
+        .form-group{
+          padding: 10px;
+          padding-left: 30px;
+          height: 450px;
+        }
+        .form-control
+        {
+            padding: 5px;
+        }
+        .button {
+          float: right;
+          text-align:center;
+          font-size: 15px;
+          width: 150px;
+          height: 40px;
+          color: white;
+          background-color: red;
+          cursor: pointer;
+        }
+        footer{
+          height: 30px;
+          text-align: center;
+          font-size: 14px;
+          background-color: red;
+          color: white;
+          padding: 5px;
+          padding-top: 15px;
+        }
+        label{
+          width: 150px;
+          float: left;
+        }
+</style>
+</head>
+
+<body>
+  <header>
+    <h1>Canadian Cyclists</h1>
+    <div class="banner">
+        <img class="banner-image" src="header_photo.jpg" alt="Race photo" height="100px">
+    </div>   
+  </header>
+    <h1>Search Bicycles by Types</h1>
+    <form class="form-group" action="search.php" method="GET">
+        <div>
+            <label for="year">Year:</label>
+            <select id="year" name="year1" required>
+                <option selected disabled hidden>Select Year</option>
+                <option value="2020">2020</option>
+            </select>
+        </div><br>
+
+        <div>
+            <label for="type">Type:</label>
+            <select id="type" name="type1" required>
+                <option class="option-fonts" selected disabled hidden>Choose Type</option>
+                <option class="option-fonts" value="CC">Cyclo-cross</option>
+                <option class="option-fonts" value="CA">Cargo</option>
+                <option class="option-fonts"value="CR">Cruiser</option>
+                <option class="option-fonts" value="FO">Folding</option>
+                <option class="option-fonts" value="H">Hybrid</option>
+                <option class="option-fonts" value="M">Mountain</option>
+                <option class="option-fonts" value="RE">Recumbent</option>
+                <option class="option-fonts" value="R">Road</option>
+                <option class="option-fonts" value="TA">Tandem</option>
+                <option class="option-fonts" value="TK">Track</option>
+                <option class="option-fonts" value="Trike">Trike</option>
+                <option class="option-fonts" value="All">All Types</option>
+            </select>
+        </div><br>
+
+        <div>
+            <input class="button" type="submit" id="showResult" value="Search"/>
+        </div>
+
+    </form>
+    <footer>&copy; 2021 Robust Routine</footer>
+</body>
+
+</html>
